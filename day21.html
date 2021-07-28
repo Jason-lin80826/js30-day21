@@ -59,11 +59,7 @@
     /*Compass: https://thenounproject.com/search/?q=compass&i=592352*/
   </style>
   <script>
-const text = document.querySelector('.position');
-const button = document.querySelector('button');
-    
-function getPosition() {
-  const arrow = document.querySelector('.arrow');
+    const arrow = document.querySelector('.arrow');
     const speed = document.querySelector('.speed-value');
 
     navigator.geolocation.watchPosition((data) => {
@@ -73,7 +69,6 @@ function getPosition() {
     }, (err) => {
       console.error(err);
     });
-};
   </script>
 </body>
 </html>
